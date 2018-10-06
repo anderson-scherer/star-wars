@@ -1,0 +1,8 @@
+{
+  "breadcrumbs.enabled": true,
+  "editor.minimap.enabled": false,
+  "emmet.triggerExpansionOnTab": true,
+  "files.associations": {
+    "*.html": "html"
+  }
+}
