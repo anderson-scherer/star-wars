@@ -1,0 +1,17 @@
+@import '1.tools/_keyframes';
+
+input { outline: none; }
+
+@include keyframes(autofill) {
+  to {
+    color: $white;
+    background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: 'autofill';
+  -webkit-animation-fill-mode: both;
+  animation-name: 'autofill';
+  animation-fill-mode: both;
+}

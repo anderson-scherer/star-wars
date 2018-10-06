@@ -1,0 +1,18 @@
+@import
+  '1.tools/_boxsizing',
+  '2.settings/_fonts';
+
+* {
+  @include boxSizing();
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $bg-default;
+  font-family: $font-family-default;
+  color: $color-default;
+  font-weight: 300;
+}
