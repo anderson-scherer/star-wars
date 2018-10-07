@@ -1,30 +1,40 @@
 // Fonts > Family
-$font-family-default: Arial, sans-serif;
-$font-family-helper: Arial , sans-serif;
+$font-family-default: 'Marvel', sans-serif;
+$font-family-helper: 'Marvel', sans-serif;
 
-// Fonts > size
-$ft-size: 14;
-$ft-heigth: 20;
+// Fonts
+$ft-size: 13;
+$ft-heigth: 16;
 
-// BGS
-$bg-default: #fff;
-$bg-aux: #000;
-$bg-helper: #466883;
-
-// Colors
-$color-default: #fff;
-$color-aux: #000;
-$color-helper: #ddd;
+// Default
 $black: #000;
 $white: #fff;
 
-// Line
-$line-default: #fff;
-$line-aux: #fff;
+// BGS
+$bg-default: #151515;
+$bg-aux: #0A0909;
+$bg-helper: #24E8FF;
+
+// Box Shadow
+$shadow-default: 0 0 20px rgba(#000, .25);
+$shadow-aux: 0 0 20px rgba(#24E8FF, .15);
+
+// Colors
+$color-default: #DDD;
+$color-aux: #FFC500;
+$color-helper: #393434;
 
 // Buttons
 $btn-default: #fff;
-$btn-aux: #000;
+$btn-aux: #ff0000;
+
+// Icons
+$icon-default: #393434;
+$icon-aux: #FFC500;
+
+// Line
+$line-default: #0A0909;
+$line-aux: #24E8FF;
 
 // Breackpoints
 $mob: 320px;
