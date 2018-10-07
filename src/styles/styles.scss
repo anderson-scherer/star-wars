@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import
+  '2.settings/_fonts',
   '2.settings/_variables',
   '3.generic/_normalizer',
   '3.generic/_reset',
@@ -8,3 +9,13 @@
   '4.base/_links',
   '4.base/_text',
   '6.trumps/_print';
+
+
+body {
+  background: url('../assets/images/starts-background-left.jpg') repeat-y left top,
+              url('../assets/images/starts-background-right.jpg') repeat-y right top;
+  background-color: $bg-default;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
