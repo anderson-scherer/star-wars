@@ -1,0 +1,102 @@
+@import 
+'1.tools/_fontsize',
+'2.settings/_variables';
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    * {
+        transition: all .1s ease-in-out;
+    }
+
+    article {
+        position: relative;
+        border: 1px solid $line-default;
+        box-shadow: $shadow-default;
+        background-color: $bg-aux;
+        padding: 25px 20px;
+        margin-bottom: 20px;
+        
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+
+            h3 {
+                @include fontSize(18);
+                color: $color-aux;
+                margin-right: 5px;
+            }   
+            
+            span {
+                width: 13px;
+                height: 13px;
+                color: $icon-default;
+                transform: rotate(45deg);
+            }
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            @include fontSize(16);
+            color: $btn-aux;
+        }
+
+        div {
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translate(-50%, 0); 
+            display: flex;            
+
+            i {
+                margin: 0 1px;
+            }
+
+            i,
+            &::before, 
+            &::after {
+                background-color: $icon-default;
+                width: 12px;
+                height: 8px;    
+                content: '';              
+            }
+        }
+
+        // Modifiers
+        &:hover,
+        &:active {            
+            border: 1px solid rgba($line-aux, .8);          
+            box-shadow: $shadow-aux;
+            background-color: rgba($bg-helper, .05);          
+            
+            header {
+                justify-content: space-between;                  
+                
+                span {
+                    width: 19px;
+                    height: 19px;
+                    color: $white;
+                    transform: rotate(-135deg)
+                }
+            }   
+          
+            a {                
+                color: $white;
+            }
+    
+            div {              
+                i,
+                &::before, 
+                &::after {
+                    border: 1px solid rgba($line-aux, .8);
+                    background-color: rgba($bg-aux, .8);                    
+                }
+            }
+        }
+    }
+}
