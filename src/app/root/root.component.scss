@@ -2,9 +2,15 @@
   '1.tools/_fontsize',
   '1.tools/_animation',
   '1.tools/_keyframes',
+  '5.objetcs/_grid',
   '2.settings/_variables';
 
-header{
+div {
+  @extend .o-row;
+  margin-top: 125px;
+}
+
+header {
   position: absolute;
   top: 50%;
   left: 50%;
