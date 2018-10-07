@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./root.component.scss']
 })
 export class RootComponent implements OnInit {
+  title = 'Star Wars - The Saga';
+  support = 'The force wil br with you';
+  start = false;
 
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.start = true;
+    }, 3000);
   }
 
+  StartModeOn() {
+    return this.start ? 'moviment' : null;
+  }
 }
