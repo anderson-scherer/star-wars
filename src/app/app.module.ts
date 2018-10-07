@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { RootComponent } from './root/root.component';
 import { AppRoutingModule, RoutingComponents } from './app-routing.module';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
     RootComponent,
-    RoutingComponents
+    RoutingComponents,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,
