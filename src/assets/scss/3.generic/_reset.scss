@@ -2,7 +2,9 @@
   '1.tools/_boxsizing',
   '2.settings/_fonts';
 
-* {
+*,
+*::before,
+*::after {
   @include boxSizing();
 }
 
