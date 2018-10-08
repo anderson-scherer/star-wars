@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import { Observable } from 'rxjs';
+import { Angular2SwapiService, Film } from 'angular2-swapi';
 
 @Component({
   selector: 'app-movie-details',
@@ -7,9 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieDetailsComponent implements OnInit {
 
-  constructor() { }
+  film: Observable<Film>;
+  id: number;
+
+  constructor(private route: ActivatedRoute, private _swapi: Angular2SwapiService) {
+    this.id = this.route.snapshot.params.id;
+  }
 
   ngOnInit() {
+    this.film = this._swapi.getFilm(this.id);
   }
 
 }
