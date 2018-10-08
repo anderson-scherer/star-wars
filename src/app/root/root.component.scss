@@ -47,3 +47,14 @@ header {
     }
   }
 }
+
+footer {
+  margin-top: 15px;
+
+  span {
+    color: $icon-default;
+    display: block; 
+    margin: 0 auto;
+    width: 100px;
+  }
+}
