@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { Angular2SwapiModule } from 'angular2-swapi';
+
 import { RootComponent } from './root/root.component';
 import { AppRoutingModule, RoutingComponents } from './app-routing.module';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
@@ -9,11 +11,12 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
   declarations: [
     RootComponent,
     RoutingComponents,
-    BreadcrumbComponent
+    BreadcrumbComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Angular2SwapiModule
   ],
   providers: [],
   bootstrap: [RootComponent]

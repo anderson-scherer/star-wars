@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Pipe } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Angular2SwapiService, Film } from 'angular2-swapi';
 
 @Component({
   selector: 'app-movie-list',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie-list.component.scss']
 })
 export class MovieListComponent implements OnInit {
+  films: Observable<Film[]>;
 
-  constructor() { }
+  constructor(private _swapi: Angular2SwapiService) { }
 
   ngOnInit() {
+    this.films = this._swapi.getFilms();
   }
 
 }
